@@ -1,0 +1,24 @@
+.project-enter {
+  top: 100%;
+  &.project-enter-active {
+    top: 0;
+    transition: top .5s ease-in;
+  }
+}
+
+.project-wrap.project-leave {
+  top: 0;
+  &.project-leave-active {
+    top: 100%;
+    transition: top 5s ease-in;
+  }
+}
+
+.project-wrap.project-appear {
+  top: 100%;
+  &.project-appear-active {
+    top: 0;
+    transition: top .2s ease-in;
+  }
+}
+

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import NavLink from '../../components/NavLink'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 import './styles.scss'
 
@@ -27,7 +28,16 @@ export default class App extends Component {
         {/*<li><NavLink to='/login'>Войти</NavLink></li>*/}
         {/*</ul>*/}
         {this.showCloseButton()}
-        {this.props.children}
+        <ReactCSSTransitionGroup
+          transitionName='page'
+          transitionEnter={true}
+          transitionLeave={true}
+          transitionEnterTimeout={0}
+          transitionLeaveTimeout={0}>
+          {React.cloneElement(this.props.children, {
+            key: this.props.location.pathname
+          })}
+        </ReactCSSTransitionGroup>
       </div>
     )
   }
