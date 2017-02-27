@@ -21,12 +21,6 @@ export default class App extends Component {
   render() {
     return (
       <div id='bl-main' className='bl-main'>
-        {/*<ul className='nav nav-pills'>*/}
-        {/*<li><NavLink onlyActiveOnIndex={true} to='/'>Главная</NavLink></li>*/}
-        {/*<li><NavLink to='/admin'>Админка</NavLink></li>*/}
-        {/*<li><NavLink to='/list'>Список жанров</NavLink></li>*/}
-        {/*<li><NavLink to='/login'>Войти</NavLink></li>*/}
-        {/*</ul>*/}
         {this.showCloseButton()}
         <ReactCSSTransitionGroup
           transitionName='page'
