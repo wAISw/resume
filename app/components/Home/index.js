@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import Box from 'components/Box'
+import Box from '../Box'
 import './styles.scss'
 
 export default class Home extends Component {

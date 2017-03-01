@@ -7,6 +7,7 @@ import './styles.scss'
 export default class App extends Component {
   showCloseButton() {
     let pathname = (this.props.location.pathname || '').replace(/\//g, '');
+    console.log(pathname);
     switch (pathname) {
       case 'about':
       case 'works':

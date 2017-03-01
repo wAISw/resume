@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
 import './styles.scss'
 // import NavLink from 'components/NavLink'
-import Project from 'components/Project'
+import Project from '../Project'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import {showDetail} from '../../actions/ProjectActions'
-import {projectsInfo} from 'constants/Project'
+import {projectsInfo} from '../../constants/Project'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 export class Works extends Component {
