@@ -10,9 +10,7 @@ export  default  class Box extends Component {
       component='div'
       transitionName={transitionName}
       transitionAppear={true}
-      transitionAppearTimeout={700}
-      transitionEnter={false}
-      transitionLeave={true}>
+      transitionAppearTimeout={700}>
       <section style={styles} className={transitionName}>
         <div className='bl-box'>
           <h2><NavLink to={link}>{title}</NavLink></h2>

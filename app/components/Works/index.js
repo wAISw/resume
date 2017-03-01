@@ -31,7 +31,7 @@ export class Works extends Component {
         <div key={project.id} className='col-xs-4'>
           <ul id='bl-work-items'>
             <li><span onClick={() => this.showProject(project)}>
-                      <img src={`./images/${project.id}.jpg`}/></span></li>
+                      <img src={require(`./images/${project.id}.jpg`)}/></span></li>
           </ul>
           <p>{project.name}</p>
         </div>

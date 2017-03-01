@@ -8,7 +8,9 @@ export default class Project extends Component {
       <div className='project-wrap bl-show-work'>
         <div className='content'>
           <div>
-            <img src={`./images/${id}.jpg`}/>
+            <div className="text-center">
+              <img src={require(`../Works/images/${id}.jpg`)}/>
+            </div>
             <br/>
             <br/>
             <h4>Project Overview</h4>

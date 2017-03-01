@@ -6,7 +6,8 @@
   "scripts": {
     "test": "",
     "start": "node server",
-    "build": "rimraf dist && webpack --config ./webpack.production.config.js --progress --profile --colors",
+    "build": "webpack --config ./webpack.production.config.js --progress --profile --colors",
+    "build:clean": "rimraf dist && webpack --config ./webpack.production.config.js --progress --profile --colors",
     "eslint": "eslint ."
   },
   "keywords": [

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import './styles.scss'
+import img from './images/blogentry.jpg'
 
 export default class Blog extends Component {
   render() {
@@ -9,7 +10,7 @@ export default class Blog extends Component {
           <h2>Latest Blog Entry</h2>
           <article>
             <h3>Expanding Your Horizons</h3>
-            <img src='./Transition - vCard Theme_files/blogentry.jpg' alt=''/>
+            <img src={img} alt=''/>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
               industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
               scrambled it to make a type specimen book.</p>

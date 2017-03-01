@@ -10,7 +10,7 @@ export default class Home extends Component {
         link: 'about',
         transitionName: 'block-1',
         styles: {
-          background: 'url(\'./images/back2.jpg\') no-repeat'
+          background: 'url(\''+require('./images/back2.jpg')+'\') no-repeat'
         }
       },
       {
@@ -18,8 +18,7 @@ export default class Home extends Component {
         link: 'works',
         transitionName: 'block-2',
         styles: {
-          background: 'url(\'./images/back3.jpg\') no-repeat'
-
+          background: 'url(\''+require('./images/back3.jpg')+'\') no-repeat'
         }
       },
       {
@@ -27,7 +26,7 @@ export default class Home extends Component {
         link: 'blog',
         transitionName: 'block-3',
         styles: {
-          background: 'url(\'./images/back4.jpg\') no-repeat'
+          background: 'url(\''+require('./images/back4.jpg')+'\') no-repeat'
         }
       },
       {
@@ -35,7 +34,7 @@ export default class Home extends Component {
         link: 'contacts',
         transitionName: 'block-4',
         styles: {
-          background: 'url(\'./images/back5.jpg\') no-repeat'
+          background: 'url(\''+require('./images/back5.jpg')+'\') no-repeat'
         }
       }
     ];
